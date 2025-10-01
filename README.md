@@ -1,6 +1,6 @@
-# SwiftUI Weather Practice App
+# SwiftUI Basics Components and Weather App UI Practice
 
-This is a small practice project where I am learning the **basics of SwiftUI** by building a simple Weather UI.  
+This is a small practice project where I am learning the **basics of SwiftUI** by building a simple Weather UI and more UI components with basic views in SwiftUI.  
 The goal is to explore layout, styling, and state management in SwiftUI while recreating a weather app interface.
 
 ## Features
@@ -15,4 +15,3 @@ The goal is to explore layout, styling, and state management in SwiftUI while re
 - iOS 15.0+
 - Swift 5+
 
-<img width="245" height="540" alt="Screenshot 2025-10-01 at 1 41 00 pm" src="https://github.com/user-attachments/assets/05075dc7-dd98-477a-985e-4c671b5ae57a" />
