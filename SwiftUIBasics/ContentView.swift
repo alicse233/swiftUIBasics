@@ -9,22 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            HStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .padding(12)
-                    .foregroundStyle(.tint)
-                Text("Hello, all!")
-            }
-            HStack {
-                Image(systemName: "globe")
-                    .padding(12)
-                    .foregroundStyle(.red)
-                Text("This is another string")
-            }
-        }
-        .padding()
+        WeatherView()
+//        VStack {
+//            HStack {
+//                Image(systemName: "globe")
+//                    .imageScale(.large)
+//                    .padding(12)
+//                    .foregroundStyle(.tint)
+//                Text("Hello, all!")
+//            }
+//            HStack {
+//                Image(systemName: "globe")
+//                    .padding(12)
+//                    .foregroundStyle(.red)
+//                Text("This is another string")
+//            }
+//        }
+//        .padding()
     }
 }
 
