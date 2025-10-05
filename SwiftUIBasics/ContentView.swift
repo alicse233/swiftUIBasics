@@ -8,24 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isInfoShown = false
     var body: some View {
-        WeatherView()
-//        VStack {
-//            HStack {
-//                Image(systemName: "globe")
-//                    .imageScale(.large)
-//                    .padding(12)
-//                    .foregroundStyle(.tint)
-//                Text("Hello, all!")
-//            }
-//            HStack {
-//                Image(systemName: "globe")
-//                    .padding(12)
-//                    .foregroundStyle(.red)
-//                Text("This is another string")
-//            }
-//        }
-//        .padding()
+        //        WeatherView()
+        NavigationStack {
+            List(Week.days, id: \.self) { day in
+                HStack {
+                    Image(systemName: day.icon)
+                    Text("\(day.high) F")
+                    NavigationLink(value: day, ) {
+                        Text(day.name)
+                    }
+                }
+            }
+            .navigationTitle("New York City")
+            .navigationDestination(for: Day.self) { day in
+                Text(day.name)
+                Button("More info") {
+                    isInfoShown = true
+                }
+                .padding()
+                .sheet(isPresented: $isInfoShown, content: {
+                    return Text("High \(day.high)F Low \(day.low)F")
+                })
+            }
+        }
     }
 }
 
